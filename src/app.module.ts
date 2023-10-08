@@ -23,6 +23,7 @@ import { FilesModule } from './files/files.module';
     ConfigModule.forRoot({envFilePath: '.env'}),
     SequelizeModule.forRoot({
       uri : process.env.POSTGRES_URI,
+      ssl : true,
       dialect: "postgres",
       // host: process.env.POSTGRES_HOST,
       // port: Number(process.env.POSTGRES_PORT),
