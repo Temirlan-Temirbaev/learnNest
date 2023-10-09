@@ -13,7 +13,7 @@ export class FilesService {
     //   fs.mkdirSync(filePath, {recursive: true})
     // }
 
-    // fs.writeFileSync(path.join(filePath, fileName), file.buffer);
+    fs.writeFileSync(path.join(filePath, fileName), file.buffer);
     return fileName
   }
 }
